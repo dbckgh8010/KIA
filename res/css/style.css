@@ -1,0 +1,108 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+
+/*section1*/
+.section1 {display: flex; width: 100%; height: 100%; position: relative; left: 0; top: 0;}
+.section1 .swiper {display: flex; width: 100%; height: 100vh;}
+.section1 .swiper .swiper-wrapper {width: 100%; height: 100vh;}
+.section1 .swiper .swiper-wrapper .swiper-slide {display: block; position: relative; width: 100%; height: 100vh; padding: 0 48px 64px;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info {position: absolute; bottom: 0; left: 0; width: 100%; margin: 0 48px 64px 48px; color: #fff; overflow: visible;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-type {display: block; font-size: 18px; line-height: 30px; transform: translateX(40%); opacity: 0; transition: opacity 1.5s ease, transform 1s ease;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-name {display: flex; font-size: 52px; font-weight: 600; line-height: 63px; margin-top: 16px; transform: translateX(40%); opacity: 0; transition: opacity 2s ease, transform 1.5s ease;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-desc {display: flex; margin: 48px 0 4px 4px;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-sub__name {display: flex; font-size: 52px; padding-top: 10px;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-desc .more-link {padding: 16px 24px; font-size: 14px; font-weight: 600; color: #05141f; background-color: #fff; border: 1px solid #fff;}
+.section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-desc .get-link {padding: 16px 24px; margin-left: 16px; font-size: 14px; font-weight: 600; color: #fff; background-color: #05141f; border: 1px solid #05141f;}
+.section1 .swiper .swiper-pagination {position: absolute; bottom: 40px;}
+.section1 .swiper .swiper-pagination .swiper-pagination-bullet {width: 10px; height: 10px; margin: 8px; background: transparent; border: 1px solid #fff; opacity: 1;}
+.section1 .swiper .swiper-pagination .swiper-pagination-bullet-active {width: 12px; height: 12px; background-color: #fff;}
+.section1 .chat {position: absolute; bottom: 65px; right: 50px; z-index: 1;}
+.section1 .chat .chat-link {display: flex; width: 56px; height: 56px;}
+
+/*section1 text등장*/
+.section1 .swiper .swiper-wrapper .swiper-slide-active .car-info .car-type {transform: translateX(0); opacity: 1;}
+.section1 .swiper .swiper-wrapper .swiper-slide-active .car-info .car-name {transform: translateX(0); opacity: 1;}
+/*section1 swiper 배경이미지*/
+.section1 .chat .chat-link {background: url("../img/icon/icon_Chat-Active.svg") no-repeat center -10px;}
+.section1 .swiper .swiper-wrapper .slide1 {background: url("../img/kv_the_new_sportage.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide2 {background: url("../img/kv_the_2025_k5_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide3 {background: url("../img/kv_the_kia_tasman_241216_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide4 {background: url("../img/kv_the_new_carnival_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide5 {background: url("../img/kv_carnival_hi_limousine_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide6 {background: url("../img/kv_the_new_k8_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide7 {background: url("../img/kv_flagship_store_pc.jpg") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide8 {background: url("../img/kv_used_car_pc.png") no-repeat center / cover;}
+.section1 .swiper .swiper-wrapper .slide9 {background: url("../img/kv_rental_pc_240527.jpg") no-repeat center / cover;}
+
+/*section2*/
+.section2 {padding: 120px 0 40px 0;}
+.section2-wrap {display: flex; flex-direction: column; align-items: center; position: relative; width: 100%;}
+.section2-wrap .title .title-name {font-size: 48px; color: #05141f;}
+.section2-wrap .swiper-tab {display: flex; justify-content: center; width: 100%; margin: 40px 0 70px 0; border-bottom: 1px solid #dadbdc;}
+.section2-wrap .swiper-tab .tab-list {display: flex;}
+.section2-wrap .swiper-tab .tab-list .list {margin-right: 48px;}
+.section2-wrap .swiper-tab .tab-list .list.active .tab-btn {color:#010e18; font-weight: 600; border-bottom: 2px solid #010e18;}
+.section2-wrap .swiper-tab .tab-list .list .tab-btn {height: 46px; font-size: 20px; font-weight: 600; color: #697278; background: none; border: none; cursor: pointer;}
+.section2-wrap .slide-wrap {position: relative; width: 100%; max-width: 1344px; margin: 0 auto; overflow: hidden;}
+.section2-wrap .slide-wrap .swiper2 {display: none;}
+.section2-wrap .slide-wrap .swiper2.active {display: block;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide {position: relative; width: 100%; height: auto; padding: 40px 40px 240px; border: 1px solid #dadbdc; border-radius: 15px;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-title {position: relative; height: 102px;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-title .car-name {font-size: 24px; line-height: 1.43;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-title .car-rank {display: flex; justify-content: center; align-items: center; height: 32px; position: absolute; top: 0; right: 0; padding: 0 17px; font-size: 14px; font-weight: 600; color: #fff; background-color: #05141f; border: 1px solid #05141f; border-radius: 30px;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-title .car-description {height: 35.2px; margin-top: 16px; color: #697278; line-height: 1.75; letter-spacing: -0.5px;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-title .car-description .bar {display: inline-block; width: 1px; height: 16px; margin: 0 12px; background-color: #dadbdc; vertical-align: middle;}
+.section2-wrap .slide-wrap .swiper-wrapper .swiper-slide .car-desc {margin-top: 24px;}
+.section2-wrap .slide-wrap .car-info .car-img {display: flex; align-items: center; justify-content: center;}
+.section2-wrap .slide-wrap .car-info .car-img img {width: calc(100% + 40px);}
+.section2-wrap .slide-wrap .car-info .car-desc .info-list {display: flex; justify-content: space-between; height: 28px; margin-bottom: 16px;}
+.section2-wrap .slide-wrap .car-info .car-desc .info-list .list1 {line-height: 1.25; text-align: left; font-weight: 600; color: #05141f; white-space: nowrap;}
+.section2-wrap .slide-wrap .car-info .car-desc .info-list .list2 {text-align: right; font-weight: 400; color: #697278; overflow: hidden;}
+.section2-wrap .slide-wrap .car-info .car-desc .info-list .list2 .option {width: 250px; line-height: 1.75; letter-spacing: -1px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.section2-wrap .slide-wrap .car-info .car-desc .info-list:nth-child(5) {height: 80px;}
+.section2-wrap .slide-wrap .car-info .car-bottom {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; padding: 0 40px; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
+.section2-wrap .slide-wrap .car-info .car-bottom .car-price {width: 100%; padding-top: 24px; margin-bottom: 48px; text-align: right; border-top: 1px solid #dadbdc;}
+.section2-wrap .slide-wrap .car-info .car-bottom .car-price span {font-size: 28px; font-weight: 600; color: #05141f;}
+.section2-wrap .slide-wrap .car-info .car-bottom .car-btn {display: flex; align-items: center; height: 48px;}
+.section2-wrap .slide-wrap .car-info .car-bottom .car-btn .more-link {padding: 16px 24px; color: #05141f; border: 1px solid #697278;}
+.section2-wrap .slide-wrap .car-info .car-bottom .car-btn .get-link {padding: 16px 24px; margin-left: 16px; color: #fff; background-color: #05141f; border: 1px solid #05141f;}
+.section2-wrap .slide-wrap .car-text {display: flex; justify-content: center; width: 100%; margin-top: 36px; font-size: 14px; color: #697278;}
+.section2-wrap .slide-wrap .swiper-pagination {position: relative; margin-top: 51px;}
+.section2-wrap .slide-wrap .swiper-pagination span {width: 12px; height: 12px; margin: 0 8px; background-color: #000;}
+.section2-wrap .swiper-button-next {position: absolute; top: 50%; right: -48px; width: 40px; height: 40px; background: url("../img/icon/swiper_arrow_btn.svg") no-repeat center / cover; border: 0; outline: 0;}
+.section2-wrap .swiper-button-prev {position: absolute; top: 50%; left: -48px; width: 40px; height: 40px; background: url("../img/icon/swiper_arrow_btn.svg") no-repeat center / cover; transform: rotate(180deg);}
+.section2-wrap .swiper-button-next::after {display: none;}
+.section2-wrap .swiper-button-prev::after {display: none;}
+
+/*section3*/
+.section3-wrap .link-list {display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 1344px;; padding: 120px 0; margin: 0 auto;}
+.section3-wrap .link-list .list {background-color: #f8f8f8; width: 100%; height: 244px;}
+.section3-wrap .link-list .list .link {display: flex; flex-direction: column; position: relative; padding: 24px; height: 100%;}
+.section3-wrap .link-list .list .link .link-icon .w-icon {display: none;}
+.section3-wrap .link-list .list .link .link-btn {position: absolute; bottom: 24px; right: 48px; width: 100%; text-align: right;}
+.section3-wrap .link-list .list .link .link-btn span {text-align: right; color: #f8f8f8;}
+.section3-wrap .link-list .list .link .link-btn span::after {content: ""; display: block; width: 24px; height: 24px; position: absolute; bottom: -4px; right: -26px; background: url("../img/icon/icon_Chevron-Right.svg") no-repeat center / cover;}
+.section3-wrap .link-list .list:hover {background-color: #05141f;}
+.section3-wrap .link-list .list:hover .link .link-icon .w-icon {display: block;}
+.section3-wrap .link-list .list:hover .link .link-icon .color {display: none;}
+.section3-wrap .link-list .list:hover .link .link-text {color: #fff;}
+.section3-wrap .link-list .list:hover .link-btn span::after {content: ""; display: block; width: 24px; height: 24px; position: absolute; bottom: -4px; right: -26px; background: url("../img/icon/icon_Chevron-Right-w.svg") no-repeat center / cover; transition: 1s ease;}
+
+/*section4*/
+.section4-wrap {display: flex; flex-direction: column; align-items: center; padding-bottom: 120px;}
+.section4-wrap .news-title .title {font-size: 42px; font-weight: 600; color: #05141f;}
+.section4-wrap .news-poster {display: flex; position: relative; max-width: 1340px; margin: 64px auto 80px;}
+.section4-wrap .news-poster  .news-content {display: flex; flex-direction: column; padding: 80px 64px 64px; background-color: #697278;}
+.section4-wrap .news-poster  .news-content .title-name {font-size: 18px; line-height: 1.67; color: #fff;}
+.section4-wrap .news-poster  .news-content .title-sub__name {margin-top: 16px; font-size: 24px; line-height: 1.5; color: #fff;}
+.section4-wrap .news-poster  .news-content .news-desc__text {margin-top: 48px; line-height: 1.75; color: #fff; letter-spacing: -1px;}
+.section4-wrap .news-poster  .news-content .more {position: absolute; bottom: 64px; background-color: #fff; color: #05141f; padding: 16px 24px; border: 1px solid #9fa5a9;}
+.section4-wrap .news-list {display: flex; justify-content: space-between; max-width: 1340px; width: 100%; margin: 80px auto 120px;}
+.section4-wrap .news-list .list {max-width: 346px; width: 100%; line-height: 1.65;}
+.section4-wrap .news-list .list .list-name {margin-bottom: 16px; font-size: 18px; font-weight: 600; color: #697278;}
+.section4-wrap .news-list .list a {font-size: 18px; font-weight: 600; color: #05141f;}
+
+.btn {position: fixed; bottom: 122px; right: 50px;}
+.btn .chat-btn {padding-bottom: 20px;}
+.btn .chat-btn a {display: block; width: 56px; height: 56px; text-indent: -9999px; background: url("../img/icon/icon_Chat-Active.svg") no-repeat center -9px; background-color: #fff; border-radius: 50%; box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .2);}
+.btn .top-btn a {display: block; width: 56px; height: 56px; text-indent: -9999px; background: url("../img/icon/footer_top_btn.svg") no-repeat center; background-color: #fff; border-radius: 50%; box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .2);}
