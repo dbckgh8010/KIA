@@ -25,6 +25,17 @@ $(function() {
             el: ".section2 .swiper-pagination", 
             clickable: true,                   
         },
+        breakpoints: {
+            1365: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        },
     });
 
     $(".list").on('click', function() {

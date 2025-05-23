@@ -5,7 +5,7 @@
 .section1 {display: flex; width: 100%; height: 100%; position: relative; left: 0; top: 0;}
 .section1 .swiper {display: flex; width: 100%; height: 100vh;}
 .section1 .swiper .swiper-wrapper {width: 100%; height: 100vh;}
-.section1 .swiper .swiper-wrapper .swiper-slide {display: block; position: relative; width: 100%; height: 100vh; padding: 0 48px 64px;}
+.section1 .swiper .swiper-wrapper .swiper-slide {display: block; position: relative; width: 100%; height: auto; padding: 0 48px 64px;}
 .section1 .swiper .swiper-wrapper .swiper-slide .car-info {position: absolute; bottom: 0; left: 0; width: 100%; margin: 0 48px 64px 48px; color: #fff; overflow: visible;}
 .section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-type {display: block; font-size: 18px; line-height: 30px; transform: translateX(40%); opacity: 0; transition: opacity 1.5s ease, transform 1s ease;}
 .section1 .swiper .swiper-wrapper .swiper-slide .car-info .car-name {display: flex; font-size: 52px; font-weight: 600; line-height: 63px; margin-top: 16px; transform: translateX(40%); opacity: 0; transition: opacity 2s ease, transform 1.5s ease;}
@@ -73,12 +73,23 @@
 .section2-wrap .swiper-button-prev {position: absolute; top: 50%; left: -48px; width: 40px; height: 40px; background: url("../img/icon/swiper_arrow_btn.svg") no-repeat center / cover; transform: rotate(180deg);}
 .section2-wrap .swiper-button-next::after {display: none;}
 .section2-wrap .swiper-button-prev::after {display: none;}
+/*section2 반응형*/
+@media (max-width: 1024px) {
+    .section2-wrap .swiper-tab .tab-list .list .tab-btn {font-size: 14px;}
+    .section2-wrap .swiper-tab .tab-list .list {margin: 0; padding: 0 16px;}
+    .section2-wrap .swiper-tab .tab-list .list:first-child {padding: 0 16px 0 0;}
+}
+@media (max-width: 340px) {
+    .section2-wrap .swiper-tab .tab-list .list {margin: 0; padding: 0 10px;}
+    .section2-wrap .swiper-tab .tab-list .list:first-child {padding: 0 10px 0 0;}
+}
 
 /*section3*/
-.section3-wrap .link-list {display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 1344px;; padding: 120px 0; margin: 0 auto;}
+.section3-wrap .link-list {display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 1344px; width: 100%; padding: 120px 0; margin: 0 auto;}
 .section3-wrap .link-list .list {background-color: #f8f8f8; width: 100%; height: 244px;}
 .section3-wrap .link-list .list .link {display: flex; flex-direction: column; position: relative; padding: 24px; height: 100%;}
-.section3-wrap .link-list .list .link .link-icon .w-icon {display: none;}
+.section3-wrap .link-list .list .link .color {width: 32px;}
+.section3-wrap .link-list .list .link .link-icon .w-icon {display: none; width :32px;}
 .section3-wrap .link-list .list .link .link-btn {position: absolute; bottom: 24px; right: 48px; width: 100%; text-align: right;}
 .section3-wrap .link-list .list .link .link-btn span {text-align: right; color: #f8f8f8;}
 .section3-wrap .link-list .list .link .link-btn span::after {content: ""; display: block; width: 24px; height: 24px; position: absolute; bottom: -4px; right: -26px; background: url("../img/icon/icon_Chevron-Right.svg") no-repeat center / cover;}
@@ -87,6 +98,15 @@
 .section3-wrap .link-list .list:hover .link .link-icon .color {display: none;}
 .section3-wrap .link-list .list:hover .link .link-text {color: #fff;}
 .section3-wrap .link-list .list:hover .link-btn span::after {content: ""; display: block; width: 24px; height: 24px; position: absolute; bottom: -4px; right: -26px; background: url("../img/icon/icon_Chevron-Right-w.svg") no-repeat center / cover; transition: 1s ease;}
+
+/*section3 반응형*/
+@media (max-width: 768px) {
+    .section3-wrap .link-list {flex-direction: column; padding: 64px 16px;}
+    .section3-wrap .link-list .list {height: 143px;}
+    .section3-wrap .link-list .list .link .link-text span {font-size: 14px;}
+
+}
+
 
 /*section4*/
 .section4-wrap {display: flex; flex-direction: column; align-items: center; padding-bottom: 120px;}
@@ -101,6 +121,16 @@
 .section4-wrap .news-list .list {max-width: 346px; width: 100%; line-height: 1.65;}
 .section4-wrap .news-list .list .list-name {margin-bottom: 16px; font-size: 18px; font-weight: 600; color: #697278;}
 .section4-wrap .news-list .list a {font-size: 18px; font-weight: 600; color: #05141f;}
+
+/*반응형*/
+@media (max-width: 1024px) {
+    .section4-wrap .news-poster {flex-direction: column; width: auto; overflow: hidden;}
+    .section4-wrap .news-poster  .news-content {padding: 32px 16px;}
+    .news-img img {width: 100%; background-size: cover;}
+    .section4-wrap .news-list {flex-direction: column; margin: 40px 10px; padding: 0 16px;}
+    .section4-wrap .news-list .list {margin-bottom: 32px;}
+}
+
 
 .btn {position: fixed; bottom: 122px; right: 50px;}
 .btn .chat-btn {padding-bottom: 20px;}
